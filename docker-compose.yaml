@@ -136,11 +136,10 @@ services:
       - CONFIG_SERVICE_URL=http://192.168.100.20:9999
     networks:
       microservices-network:
-        ipv4_address: 192.168.100.25
+        ipv4_address: 192.168.101.25
     depends_on:
       labo_discovery_service:
         condition: service_healthy
-
 
 
 networks:

@@ -8,7 +8,7 @@ services:
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
     ports:
-      - "3307:3307"
+      - "3307:3306"
     expose:
       - "3307"
     networks:
@@ -84,6 +84,7 @@ services:
     depends_on:
       labo_discovery_service:
         condition: service_healthy
+
   labo_chercheur_service:
     build: ./Chercheur-Service
     container_name: labo_chercheur_service
@@ -153,3 +154,4 @@ networks:
     ipam:
       config:
         - subnet: 192.168.101.0/24
+

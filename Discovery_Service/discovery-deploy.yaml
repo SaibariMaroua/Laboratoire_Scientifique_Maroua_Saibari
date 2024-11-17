@@ -14,8 +14,9 @@ spec:
     spec:
       containers:
         - name: discovery-service
-          image: labo_discovery_images
-          imagePullPolicy: Never
+          image: maroua537/labo_discovery_service:latest
+          imagePullPolicy: IfNotPresent
+
           ports:
             - containerPort: 8761
           readinessProbe:

@@ -14,10 +14,10 @@ spec:
     spec:
       containers:
         - name: enseignant-service
-          image: labo_enseignant_images
+          image: labo_enseignant_service_1
           imagePullPolicy: Never
           ports:
-            - containerPort: 8081
+            - containerPort: 8084
           env:
             - name: DISCOVERY_SERVICE_URL
               value: http://discovery-service.default.svc.cluster.local:8761/eureka
@@ -26,7 +26,7 @@ spec:
           readinessProbe:
             httpGet:
               path: /actuator/health
-              port: 8081
+              port: 8084
             initialDelaySeconds: 5
             periodSeconds: 5
             failureThreshold: 3
@@ -41,6 +41,6 @@ spec:
     app: enseignant-service
   ports:
     - protocol: TCP
-      port: 8081
-      targetPort: 8081
+      port: 8084
+      targetPort: 8084
   type: LoadBalancer

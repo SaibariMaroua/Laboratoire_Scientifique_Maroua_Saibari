@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
         - name: mysql
-          image: mysql
+          image: maroua537/mysql
           env:
             - name: MYSQL_ALLOW_EMPTY_PASSWORD
               value: 'yes'

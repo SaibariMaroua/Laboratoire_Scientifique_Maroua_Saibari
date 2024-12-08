@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: projet-service
-          image: labo_projet_service_1
-          imagePullPolicy: Never
+          image: maroua537/labo_projet_service_1
+          imagePullPolicy: Always
           ports:
             - containerPort: 8083
           env:

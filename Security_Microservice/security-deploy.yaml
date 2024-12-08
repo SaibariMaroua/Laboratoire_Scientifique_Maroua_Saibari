@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: security-service
-          image: labo_security_images
-          imagePullPolicy: Never
+          image: maroua537/labo_security_images
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
           env:

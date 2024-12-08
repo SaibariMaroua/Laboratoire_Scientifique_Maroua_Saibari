@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: config-service
-          image: labo_config_service_1:latest
-          imagePullPolicy: Never
+          image: maroua537/labo_config_service_1
+          imagePullPolicy: Always
           ports:
             - containerPort: 9999
           env:

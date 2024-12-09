@@ -15,6 +15,12 @@ public class Enseignant {
     private String email;
     //private String password; pas logique
     private String thematique;
+
+    public Enseignant(long l, String enseignant, String prenom) {
+    }
+
+    public Enseignant(Long l, String john, String doe, String mail) {
+    }
     //private String role;   pas logique
 
 }

@@ -12,4 +12,5 @@ public interface EnseignantRestFeign {
     @GetMapping("/Enseignants/{id}")
     Enseignant Enseignant_ByID(@PathVariable Long id);
 
+    Long nb_chercheur_Enseignant(long l);
 }

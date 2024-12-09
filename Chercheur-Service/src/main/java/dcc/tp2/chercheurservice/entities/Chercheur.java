@@ -30,5 +30,14 @@ public class Chercheur {
     private Enseignant enseignant;
 
 
-
+    public Chercheur(Long id, String nom, String prenom, String tel, String email, String password, String role, Long id_enseignant) {
+        this.id = id;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.tel = tel;
+        this.email = email;
+        this.password = password;
+        this.role = role;
+        this.id_enseignant = id_enseignant;
+    }
 }

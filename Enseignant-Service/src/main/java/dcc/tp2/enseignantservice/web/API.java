@@ -13,7 +13,7 @@ import java.util.Map;
 @RequestMapping("/Enseignants")
 public class API {
 
-    private EnseignantService enseignantService;
+    private final EnseignantService enseignantService;
 
 
     public API(EnseignantService enseignantService) {
